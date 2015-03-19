@@ -6,6 +6,8 @@
 # Pull base image.
 FROM ranker/ubuntu
 
+MAINTAINER Vijay Mohan <vijay@ranker.com>
+
 # Install Java.
 RUN \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
